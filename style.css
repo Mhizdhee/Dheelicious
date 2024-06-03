@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color:rgb(52, 39, 30);
+
+    
+}
+
+header {
+    background-color:rgb(52, 39, 30);
+    padding: 1em;
+    text-align: left;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+h1{
+    font-size: 24px;
+}
+
+
+li{
+    list-style: none;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-image: url(./foodie.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+   
+}
+section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-section{
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    margin-bottom: 0.5em;
+}
+input, select {
+    padding: 5px;
+    margin-bottom: 1em;
+    width: 50%;
+    border: 2px solid rgb(52, 39, 30);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+
+button{
+    
+    background-color:rgb(52, 39, 30);
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    outline: none;
+     
+    border: none;
+    
+    cursor: pointer;
+}
+footer {
+    background-color:rgb(52, 39, 30);
+    padding: 1em;
+    text-align: center;
+    color: #f0f0f0;
+    
+}
+
+@media screen and (min-width:200px)and(max-width:950px){
+ .menu-icon{
+        display: block;
+    }
+
+   nav ul.menu-item{
+        display: none;
+    }
+   
+nav.show-menu ul{
+    display: block;
+}
+
+}
+
+
+@media screen and (min-width:955px){
+  .menu-icon{
+        display: none;
+    }
+
+    
+    nav .menu-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+} 

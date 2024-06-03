@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dheelicious Foods Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dheelicious&#9880;</h1>
+      <nav>
+       
+
+        <ul class="menu-item" id="menu">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span>&#9776;</span>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+      <!-- introduction section -->
+      <section>
+        <h2>Welcome to Delicious Foods!</h2>
+        <p>
+          We offer a wide range of mouth-watering dishes, made with love and
+          care. Check out our features:
+        </p>
+        <ul>
+          <li>Fresh ingredients</li>
+          <li>Expert chefs</li>
+          <li>Fast delivery</li>
+        </ul>
+      </section>
+
+      <!-- form section -->
+      <div class="form-section">
+        <form id="form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+          <label for="referral">Referral Source:</label>
+          <select id="referral" name="referral" required>
+            <option value="">Select</option>
+            <option value="social media">Social Media</option>
+            <option value="friend">Friend</option>
+            <option value="search engine">Search Engine</option>
+          </select>
+          <button id="submit">Get Started</button>
+        </form>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>Copyright ©️ 2024 Delicious Foods</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
